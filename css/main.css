@@ -533,7 +533,16 @@
 
 		#header nav {
 			margin: 1.5em 0 0 0;
+			text-align: center;
 		}
+
+			#header nav ul {
+				display: inline-block;
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+				white-space: nowrap;
+			}
 
 			#header nav li {
 				-moz-animation: nav-icons 0.5s ease-in-out forwards;
@@ -1042,5 +1051,6 @@
 	/* Header */
 
 		#header nav {
-			padding: 0 1em;
+			padding: 0;
+			font-size: 0.85em;
 		} }
