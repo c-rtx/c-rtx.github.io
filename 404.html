@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Redirection...</title>
+  <script>
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+    window.location.replace("https://photos.radenkovic.com" + path + search + hash);
+  </script>
+</head>
+<body>
+  <p>Redirection vers <a id="target" href="https://photos.radenkovic.com">photos.radenkovic.com</a>...</p>
+  <script>
+    document.getElementById("target").href = "https://photos.radenkovic.com" + path + search + hash;
+  </script>
+</body>
+</html>
