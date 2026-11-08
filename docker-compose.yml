@@ -1,11 +1,8 @@
 services:
   website:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: radenkovic-website:latest
+    image: ghcr.io/c-rtx/c-rtx.github.io:latest
     container_name: radenkovic-website
     restart: unless-stopped
     ports:
-      # Port hôte exposé pour Pangolin ou reverse proxy local
+      # Port hôte exposé pour Pangolin
       - "8085:80"
