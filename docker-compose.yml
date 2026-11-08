@@ -1,0 +1,11 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: radenkovic-website:latest
+    container_name: radenkovic-website
+    restart: unless-stopped
+    ports:
+      # Port hôte exposé pour Pangolin ou reverse proxy local
+      - "8085:80"
